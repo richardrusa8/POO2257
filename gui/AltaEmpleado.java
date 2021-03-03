@@ -343,7 +343,18 @@ public class AltaEmpleado extends javax.swing.JFrame {
         emp.setApMaterno(this.jTextField3.getText());
         emp.setEdad(Integer.parseInt(jTextField4.getText() ) );
         emp.setCURP(jTextField5.getText());
-        emp.getDomicilio().setCalle(this.jTextField6.getText());w
+        emp.getDomicilio(new Dirección());
+        emp.getDomicilio().setCalle(this.jTextField6.getText());
+        emp.getDomicilio().setNúmero(this.jTextField7.getText());
+        emp.getDomicilio().setColonia(this.jTextField8.getText());
+        emp.getDomicilio().setDelegación(this.jTextField9.getText());
+        emp.getDomicilio().setEstado(this.jTextField10.getText());
+        emp.setNúmeroEmpleado(Interger.parseInt(this.jTextField11.getText()));
+        emp.setDepartamento(this.jTextField12.getText());
+        emp.setSueldo(Float.parseFloat(this.jTextField13.getText()));
+        emp.setHorasExtra(Interger.parseInt(this.jTextField14.getText()));
+        int confirmar = JoptionPane.showComfirmDialog(this, "¿Deseas guardar éstos datos?");
+        
     }//GEN-LAST:event_jButton5MouseClicked
 
      private void LimpiarFormulario(){
