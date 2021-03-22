@@ -27,6 +27,18 @@ public class ConceptosBasicos {
         miBocho.setColor(Color.blue);
         System.out.println(miBocho);
         
+        Automovil miMustang= new Automovil();
+        miMustang.setMarca("Ford");
+        miMustang.setSubmarca("Mustang");
+        miMustang.setModelo(2010);
+        miMustang.setColor(Color.YELLOW);
+        System.out.println(miMustang);
+        
+        Automovil miAcura= new Automovil();
+        miAcura.setMarca("NSX");
+        miAcura.setSubmarca("Acura");
+        miAcura.setModelo(2013);
+        miAcura.setColor(Color.GRAY);
     }
     
 }
